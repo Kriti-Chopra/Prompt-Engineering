@@ -1,1 +1,118 @@
+Prompt provided : 
+As a QA engineer, working in the industry for 10 years, write a test plan for the below requirements. There are 3 QA resources available. And deliverable has to go in 60 days. We need to test windows and mac. Browsers supported are chrome and safari. Give in a proper template format with bullet points and time estimations.
+
+
+Response:
+---
+
+# **Test Plan – Style Haven (Fashion E-commerce Platform)**
+
+### 1. **Introduction**
+
+* **Project Name**: Style Haven – Fashion E-commerce Platform
+* **Objective**: Ensure functional correctness, usability, security, and performance of the platform across supported environments (Windows, Mac, Chrome, Safari).
+* **Scope**: End-to-end testing of user flows (customer + seller), platform features, and non-functional requirements.
+* **Out of Scope**: Third-party integrations beyond exposed APIs, unsupported browsers/devices.
+
+---
+
+### 2. **Test Objectives**
+
+* Validate all functional requirements: User Accounts, Catalog, Cart, Checkout, Seller Dashboard, Customer Support.
+* Verify non-functional requirements: Performance, Security, Responsiveness.
+* Ensure cross-platform/browser compatibility (Windows, Mac on Chrome & Safari).
+* Deliver a stable release in **60 days**.
+
+---
+
+### 3. **Test Strategy**
+
+* **Testing Levels**:
+
+  * Unit Testing: (By Dev team)
+  * Integration Testing: Verify APIs, payment gateways, and shipping services.
+  * System Testing: End-to-end validation of workflows.
+  * Regression Testing: Ongoing, after each major build.
+  * UAT: Final validation before release.
+
+* **Testing Types**:
+
+  * Functional Testing
+  * Compatibility Testing (Windows + Mac, Chrome + Safari)
+  * Performance Testing (page load, response time)
+  * Security Testing (basic vulnerability, data protection)
+  * Usability Testing
+
+---
+
+### 4. **Test Environment**
+
+* **OS**: Windows 11, MacOS (latest stable).
+* **Browsers**: Chrome (latest stable), Safari (latest stable).
+* **Test Data**:
+
+  * User accounts (customers & sellers)
+  * Payment test cards (credit, debit, wallet)
+  * Product catalog with categories, stock variations
+
+---
+
+### 5. **Test Deliverables**
+
+* Test Plan (this document)
+* Test Scenarios & Test Cases
+* Daily/Weekly Test Execution Reports
+* Bug Reports (JIRA/Tracking tool)
+* Final Test Summary Report
+
+---
+
+### 6. **Test Schedule (60 Days)**
+
+| Phase         | Activities                                                      | Duration | Resources      |
+| ------------- | --------------------------------------------------------------- | -------- | -------------- |
+| **Day 1–5**   | Test Planning, Environment Setup, Test Data Prep                | 5 days   | QA Lead + 2 QA |
+| **Day 6–20**  | Functional Testing (User Accounts, Catalog, Cart)               | 15 days  | 3 QA           |
+| **Day 21–35** | Functional Testing (Checkout, Seller Dashboard, Support)        | 15 days  | 3 QA           |
+| **Day 36–42** | Non-Functional Testing (Performance, Security, Usability)       | 7 days   | 2 QA           |
+| **Day 43–52** | Cross-Platform & Browser Compatibility (Win/Mac, Chrome/Safari) | 10 days  | 3 QA           |
+| **Day 53–57** | Regression Testing                                              | 5 days   | 3 QA           |
+| **Day 58–59** | UAT Support                                                     | 2 days   | QA Lead        |
+| **Day 60**    | Final Test Report & Sign-Off                                    | 1 day    | QA Lead        |
+
+---
+
+### 7. **Resource Allocation**
+
+* **QA Lead (1)**: Planning, coordination, reporting, UAT support.
+* **QA Engineer 1 (1)**: Functional & regression focus.
+* **QA Engineer 2 (1)**: Compatibility & non-functional focus.
+
+---
+
+### 8. **Risk & Mitigation**
+
+* **Risk**: Payment gateway sandbox issues → *Mitigation*: Early integration testing.
+* **Risk**: Safari rendering differences → *Mitigation*: Early compatibility checks.
+* **Risk**: Limited QA resources → *Mitigation*: Strict prioritization of critical paths (checkout, payments).
+
+---
+
+### 9. **Exit Criteria**
+
+* All **critical & major defects fixed** and retested.
+* **95% test case execution coverage** achieved.
+* All priority workflows validated on **Windows + Mac (Chrome/Safari)**.
+
+---
+
+✅ This plan ensures structured execution within **60 days** using 3 QA engineers.
+
+
+Points to note:
+1. Time is saved
+2. This is not the final test plan, it should be thoughly reviewed by the lead for any changes
+3. This is zero-shot prompt as all the details were specified to the LLM
+4. It will save tokens as we do not need to prompt again for test plan
+
 
